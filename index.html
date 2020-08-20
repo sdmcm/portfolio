@@ -1,9 +1,216 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Test Title</title>
-</head>
-<body>
-<h1>key test</h1>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Player CSS -->
+    <link rel="stylesheet" href="player.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+    <title>Spencer McMahon</title>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="115">
+
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">Spencer McMahon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#soundtracks">Soundtracks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#songs">Songs</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#myModal" data-toggle="modal" data-target="#myModal">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-light custom">
+          <div class="modal-header">
+            <h5 class="modal-title">Contact</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-center"><a href="mailto: sdmcm@umich.edu">sdmcm@umich.edu</a></div>
+            <div class="row justify-content-center">(518) 256-8141</div>
+            <div class="row justify-content-center">
+              <div class="col text-center">
+                <a href="https://www.instagram.com/6o234791/"><img border="0" alt="Instagram" src="./assets/icons/instagram.png" width="30"></a>
+                <a href="https://www.linkedin.com/in/spencer-mcmahon-550b30193/"><img border="0" alt="Linkedin" src="./assets/icons/linkedin.png" width="30"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full Page Image Header -->
+    <header id="home" class="masthead">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-center">
+          <div class="col-12 col-md-10 text-center text-white">
+            <img id="signature" src="./assets/images/signature.png">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Soundtrack Section -->
+    <div class="container-fluid minHeightAdj">
+      <a class="anchor" id="soundtracks"></a>
+      <div class="row justify-content-center">
+        <h2 class="my-5">Soundtracks</h2>
+      </div>
+      <div class="container soundtrackSection">
+        <div class="row justify-content-center">
+          <div class="col-11 col-sm-10 col-md-9 col-lg-8 p-3 text-center">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_tnBs-Zd6N0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-12 text-center">Original music featured from 3:10 to 3:55</div>
+          <div class="col-12 videoPaddingSm"></div>
+        </div>
+      </div>
+      <div class="container soundtrackSection">
+        <div class="row justify-content-center">
+          <div class="col-11 col-sm-10 col-md-9 col-lg-8 p-3 text-center">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CzzmUEUCsHU" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-12 text-center">Original music featured from 0:00 to 1:34</div>
+          <div class="col-12 videoPadding"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Song Section -->
+    <div id="songSection">
+      <div class="container-fluid">
+        <a class="anchor" id="songs"></a>
+        <div class="row justify-content-center">
+          <h3 class="my-4">Songs</h3>
+        </div>
+      </div>
+      <div><!-- So that player sticks below h3 "Songs" -->
+        <div class="container">
+          <div class="row">
+            <div class = "col text-right">Release Date</div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div id="mp3Player" class="container pb-5">
+            <div class="row" onclick="playSong(0)">
+              <div class = "col-1"><img src="./assets/icons/triangleDark.png"/></div>
+              <div class = "col">Final Project</div>
+              <div class = "col-2 col-md-1">9/12</div>
+            </div>
+            <div class="row" onclick="playSong(1)">
+              <div class = "col-1"><img src="./assets/icons/triangleDark.png"/></div>
+              <div class = "col">M8s, W8s, 808s</div>
+              <div class = "col-2 col-md-1">9/12</div>
+            </div>
+            <div class="row" onclick="playSong(2)">
+              <div class = "col-1"><img src="./assets/icons/triangleDark.png"/></div>
+              <div class = "col">The Lucky One</div>
+              <div class = "col-2 col-md-1">9/12</div>
+            </div>
+            <div class="row" onclick="playSong(3)">
+              <div class = "col-1"><img src="./assets/icons/triangleDark.png"/></div>
+              <div class = "col text-truncate">just_killed_an_old_friend_but_make_it_lofi_hip_hop</div>
+              <div class = "col-2 col-md-1">9/12</div>
+            </div>
+            <div class="row" onclick="playSong(4)">
+              <div class = "col-1"><img src="./assets/icons/triangleDark.png"/></div>
+              <div class = "col text-truncate">Soulful Strut // Future Funk</div>
+              <div class = "col-2 col-md-1">9/12</div>
+            </div>
+            <div class="row" onclick="playSong(5)">
+              <div class = "col-1"><img src="./assets/icons/triangleDark.png"/></div>
+              <div class = "col">Squad</div>
+              <div class = "col-2 col-md-1">9/12</div>
+            </div>
+            <div class="row" onclick="playSong(6)">
+              <div class = "col-1"><img src="./assets/icons/triangleDark.png"/></div>
+              <div class = "col">VIBE CA$H</div>
+              <div class = "col-2 col-md-1">9/12</div>
+            </div>
+            <div class="row" onclick="playSong(7)">
+              <div class = "col-1"><img src="./assets/icons/triangleDark.png"/></div>
+              <div class = "col">Yoshi</div>
+              <div class = "col-2 col-md-1">9/12</div>
+            </div>
+          </div>
+        </div>
+        <footer class="fixed-bottom bg-dark" id="music_footer">
+          <audio src="assets/audio/finalproject.mp3" id="song"></audio>
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="song-title text-white">Final Project</div>
+            </div>
+            <div class="row justify-content-center" id="controls">
+              <img src="./assets/icons/backwardWhite.png" onclick="previousSong()" id="previous-song" />
+              <img src="./assets/icons/playWhite.png" onclick="playPause()" id="play-pause" />
+              <img src="./assets/icons/forwardWhite.png" onclick="nextSong()" id="next-song" />
+            </div>
+            <div class="row justify-content-center">
+              <div class="currentTime col text-right text-white"></div>
+              <div class = "col-8 col-sm-6 col-md-4 col-lg-3">
+                <input
+                    type="range"
+                    id="progress-bar"
+                    min="0"
+                    max=""
+                    value="0"
+                    onchange="changeProgressBar()"
+                />
+              </div>
+              <div class="durationTime col text-left text-white"></div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-dark">
+        <p class="m-0 text-center text-light">Copyright &copy; Spencer McMahon 2020</p>
+    </footer>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- custom -->
+    <script src="custom_script.js"></script>
+  </body>
 </html>
