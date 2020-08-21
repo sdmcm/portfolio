@@ -184,6 +184,7 @@ body {
     outline: none;
 }
 
+/* mouse over link */
 #controls img:hover {
   opacity: 70%;
 }
