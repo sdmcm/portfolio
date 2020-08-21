@@ -130,17 +130,17 @@
           <div id="mp3Player" class="container pb-5">
             <div class="row" onclick="playSong(0)">
               <div class = "col-1"><img src="./assets/icons/triangleDark.png"/></div>
-              <div class = "col">Final Project</div>
+              <div class = "col text-truncate">Final Project</div>
               <div class = "col-2 col-md-1">9/12</div>
             </div>
             <div class="row" onclick="playSong(1)">
               <div class = "col-1"><img src="./assets/icons/triangleDark.png"/></div>
-              <div class = "col">just_killed_an_old_friend_but_make_it_lofi_hip_hop</div>
+              <div class = "col text-truncate">just_killed_an_old_friend_but_make_it_lofi_hip_hop</div>
               <div class = "col-2 col-md-1">9/12</div>
             </div>
             <div class="row" onclick="playSong(2)">
               <div class = "col-1"><img src="./assets/icons/triangleDark.png"/></div>
-              <div class = "col">M8s, W8s, 808s</div>
+              <div class = "col text-truncate">M8s, W8s, 808s</div>
               <div class = "col-2 col-md-1">9/12</div>
             </div>
             <div class="row" onclick="playSong(3)">
@@ -155,17 +155,17 @@
             </div>
             <div class="row" onclick="playSong(5)">
               <div class = "col-1"><img src="./assets/icons/triangleDark.png"/></div>
-              <div class = "col">Squad</div>
+              <div class = "col text-truncate">Squad</div>
               <div class = "col-2 col-md-1">9/12</div>
             </div>
             <div class="row" onclick="playSong(6)">
               <div class = "col-1"><img src="./assets/icons/triangleDark.png"/></div>
-              <div class = "col">VIBE CA$H</div>
+              <div class = "col text-truncate">VIBE CA$H</div>
               <div class = "col-2 col-md-1">9/12</div>
             </div>
             <div class="row" onclick="playSong(7)">
               <div class = "col-1"><img src="./assets/icons/triangleDark.png"/></div>
-              <div class = "col">Yoshi</div>
+              <div class = "col text-truncate">Yoshi</div>
               <div class = "col-2 col-md-1">9/12</div>
             </div>
           </div>
@@ -181,7 +181,7 @@
               <img src="./assets/icons/playWhite.png" onclick="playPause()" id="play-pause" />
               <img src="./assets/icons/forwardWhite.png" onclick="nextSong()" id="next-song" />
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center" id="paddedBar">
               <div class="currentTime col text-right text-white"></div>
               <div class = "col-8 col-sm-6 col-md-4 col-lg-3">
                 <input
@@ -201,7 +201,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="py-3 bg-dark">
+    <footer class="pb-3 bg-dark pt-0" id="actualfooter">
         <p class="m-0 text-center text-light">Copyright &copy; Spencer McMahon 2020</p>
     </footer>
 
