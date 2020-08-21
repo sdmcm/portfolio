@@ -29,7 +29,7 @@ const progressBar = document.querySelector('#progress-bar'); // element where pr
 let pPause = document.querySelector('#play-pause'); // element where play and pause image appears
 
 songIndex = 0;
-songs = ['./assets/audio/finalproject.mp3', './assets/audio/JustKilledAnOldFriendButMakeItLofiHipHop.mp3', './assets/audio/M8sW8s808s.mp3', './assets/audio/Raindrops.mp3', './assets/audio/SoulfulStrutFutureFunk.mp3', './assets/audio/Squoad.mp3', './assets/audio/VIBE_CA$H.mp3', './assets/audio/yoshi.mp3']; // object storing paths for audio objects
+songs = ['./assets/audio/finalproject.mp3', './assets/audio/JustKilledAnOldFriendButMakeItLofiHipHop.mp3', './assets/audio/M8W8808.mp3', './assets/audio/Raindrops.mp3', './assets/audio/SoulfulStrutFutureFunk.mp3', './assets/audio/Squoad.mp3', './assets/audio/VIBE_CA$H.mp3', './assets/audio/yoshi.mp3']; // object storing paths for audio objects
 songTitles = ["Final Project", "just_killed_an_old_friend_but_make_it_lofi_hip_hop", "M8s, W8s, 808s", "The Lucky One", "Soulful Strut // Future Funk", "Squad", "VIBE CA$H", "Yoshi"]; // object storing track titles
 
 // function where pp (play-pause) element changes based on playing boolean value - if play button clicked, change pp.src to pause button and call song.play() and vice versa.
