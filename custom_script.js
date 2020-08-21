@@ -28,7 +28,7 @@ const songTitle = document.querySelector('.song-title'); // element where track 
 const progressBar = document.querySelector('#progress-bar'); // element where progress bar appears
 let pPause = document.querySelector('#play-pause'); // element where play and pause image appears
 
-songIndex = 0;
+songIndex = 6;
 songs = ['./assets/audio/GetOverIt.mp3', './assets/audio/SoulfulStrutFutureFunk.mp3', './assets/audio/M8sW8s808s.mp3', './assets/audio/scandalous.mp3', './assets/audio/Raindrops.mp3', './assets/audio/JustKilledAnOldFriendButMakeItLofiHipHop.mp3', './assets/audio/finalproject.mp3', './assets/audio/CarFreestyle.mp3', './assets/audio/VIBE_CA$H.mp3', './assets/audio/yoshi.mp3', './assets/audio/Squoad.mp3', './assets/audio/its_you.mp3', './assets/audio/heat_lightning.mp3']
 // songTitles = ["Final Project", "just_killed_an_old_friend_but_make_it_lofi_hip_hop", "M8s, W8s, 808s", "The Lucky One", "Soulful Strut // Future Funk", "Squad", "VIBE CA$H", "Yoshi", "Car Freestyle (Instrumental)", "Get Over It", "Heat Lightning (Instrumental)", "It's You", "Scandalous (with LoloPop13)"]; // object storing track titles
 songTitles = ["Get Over It", "Soulful Strut // Future Funk", "M8s, W8s, 808s", "Scandalous (with LoloPop13)", "The Lucky One", "just_killed_an_old_friend_but_make_it_lofi_hip_hop", "Final Project", "Car Freestyle (Instrumental)", "VIBE CA$H", "Yoshi", "Squad", "It's You", "Heat Lightning (Instrumental)"]
