@@ -145,3 +145,23 @@ function playSong(songNumber) {
     playing = false;
     playPause();
 }
+
+
+
+
+/* Media navigation Action handlers (copied from internet)*/
+
+    navigator.mediaSession.setActionHandler('previoustrack', function() {
+      previousSong();
+      console.log('> User clicked "Next Track" icon.');
+    });
+
+    navigator.mediaSession.setActionHandler('nexttrack', function() {
+      nextSong();
+      console.log('> User clicked "Next Track" icon.');
+    });
+
+    navigator.mediaSession.setActionHandler('play', function() {
+      playPause();
+      console.log('> User clicked "Play" icon.');
+    });
