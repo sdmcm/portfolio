@@ -142,6 +142,6 @@ function playSong(songNumber) {
     song.src = songs[songIndex];
     songTitle.innerHTML = songTitles[songIndex];
 
-    playing = true;
+    playing = false;
     playPause();
 }
