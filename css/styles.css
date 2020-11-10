@@ -147,6 +147,7 @@ body {
 
 #controls {
   margin-bottom: -8px;
+  position: relative;
 }
 
 #songSection {
@@ -192,6 +193,25 @@ body {
 #paddedBar{
   padding-bottom: 12px;
 }
+
+#controls button {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  height: 30px;
+  background-color: #343a40;
+  position: absolute;
+  top: 10px;
+  left: calc(50% + 110px);
+  outline: none;
+  border: 2px solid #767676;
+  border-radius:10px;
+}
+
+/* #controls #ghost {
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #343a40;
+} */
 
 @include media-breakpoint-up(xs) {
 }
