@@ -201,7 +201,7 @@ body {
   background-color: #343a40;
   position: absolute;
   top: 10px;
-  left: calc(50% + 110px);
+  left: calc(50% + 80px);
   outline: none;
   border: 2px solid #767676;
   border-radius:10px;
